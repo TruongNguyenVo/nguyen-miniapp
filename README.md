@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# nguyen-miniapp
 
-## Getting Started
+## Mô tả
 
-First, run the development server:
+Đây là một ứng dụng Todo đơn giản được xây dựng với Next.js 15, React 19, Prisma ORM và sử dụng SQLite làm database. Ứng dụng cho phép bạn thêm, xem danh sách và quản lý các công việc (todo) một cách trực quan.
+
+## Tính năng
+
+- Thêm công việc mới (todo)
+- Hiển thị danh sách todo (mới nhất lên đầu)
+- Đánh dấu trạng thái hoàn thành (completed) cho từng todo
+- Tự động reload danh sách khi có todo mới
+- Giao diện hiện đại, responsive
+
+## Công nghệ sử dụng
+
+- [Next.js 15](https://nextjs.org/) (App Router, API Route)
+- [React 19](https://react.dev/)
+- [Prisma ORM](https://www.prisma.io/) (với SQLite)
+- [Tailwind CSS](https://tailwindcss.com/) (nếu có)
+- TypeScript
+
+## Cấu trúc thư mục chính
+
+- `app/` — Chứa các file page, layout, API route
+- `components/` — Các component React như TodoForm, TodoList
+- `lib/prisma.ts` — Khởi tạo Prisma Client
+- `prisma/schema.prisma` — Định nghĩa schema cho database SQLite
+- `public/` — Chứa các file tĩnh (icon, svg, ...)
+- `.env` — Biến môi trường, cấu hình đường dẫn database
+
+## Khởi động dự án
 
 ```bash
+# Cài đặt dependencies
+npm install
+
+# Tạo database và migrate schema
+npx prisma migrate dev --name init
+
+# Khởi động server phát triển
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `npm run dev` — Chạy app ở chế độ phát triển
+- `npm run build` — Build app
+- `npm run start` — Chạy app ở chế độ production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tác giả
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- TruongNguyenVo
