@@ -6,9 +6,9 @@ export const metadata = {
     'fc:frame': JSON.stringify({
       type: 'frame',
       name: 'My Mini App',
-      url: 'https://yourdomain.com',
-      icon: 'https://yourdomain.com/icon.png',
-      splash: 'https://yourdomain.com/splash.png',
+      url: 'https://nguyen-miniapp-git-day2-nguyens-projects-a2abcaca.vercel.app',
+      icon: 'https://nguyen-miniapp-git-day2-nguyens-projects-a2abcaca.vercel.app/icon.png',
+      splash: 'https://nguyen-miniapp-git-day2-nguyens-projects-a2abcaca.vercel.app/splash.png',
       description: 'Short description used for previews',
     }),
   },
