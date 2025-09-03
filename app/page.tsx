@@ -9,5 +9,5 @@ export default function HomePage() {
     if (!isFrameReady) setFrameReady()
   }, [isFrameReady, setFrameReady])
 
-  return <div>Your app content 3</div>
+  return <div>Your app content 4</div>
 }
