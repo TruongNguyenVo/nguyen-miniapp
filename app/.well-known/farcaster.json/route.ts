@@ -10,7 +10,6 @@ export async function GET() {
     frame: {
       name: process.env.NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME,
       url: process.env.NEXT_PUBLIC_URL,
-      api_key: process.env.NEXT_PUBLIC_ONCHAINKIT_API_KEY,
       icon: process.env.NEXT_PUBLIC_APP_ICON,
       hero_image: process.env.NEXT_PUBLIC_APP_HERO_IMAGE,
       description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
