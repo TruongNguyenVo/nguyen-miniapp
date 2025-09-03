@@ -1,1 +1,2 @@
 trigger_1: add .env file
+trigger_2: after farcaster
