@@ -1,3 +1,4 @@
 trigger_1: add .env file
 trigger_2: after farcaster
 trigger_3: add image, hero, description
+trigger_4: transfer to master'branch
