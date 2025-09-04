@@ -4,12 +4,11 @@ import { MiniKitContextProvider } from '@/providers/MiniKitProvider';
 export const metadata = {
   other: {
     'fc:frame': JSON.stringify({
-      type: 'frame',
-      name: 'My Mini App',
-      url: 'https://nguyen-miniapp.vercel.app/',
-      icon: 'https://nguyen-miniapp.vercel.app/icon.png',
-      splash: 'https://nguyen-miniapp.vercel.app/splash.png',
-      description: 'Short description used for previews',
+      name: process.env.NEXT_PUBLIC_ONCHAINKIT_PROJECT_NAME,
+      url: process.env.NEXT_PUBLIC_URL,
+      icon: process.env.NEXT_PUBLIC_APP_ICON,
+      splash: process.env.NEXT_PUBLIC_APP_HERO_IMAGE,
+      description: process.env.NEXT_PUBLIC_APP_DESCRIPTION,
     }),
   },
 }
